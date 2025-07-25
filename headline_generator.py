@@ -4,7 +4,7 @@ from colorama import init, Style, Fore, Back
 init()
 
 def headline_details():
-    print(Style.BRIGHT + Fore.LIGHTBLACK_EX +
+    print(Fore.LIGHTYELLOW_EX +
         "Please choose from one of the following options:\n"
         " 1. Politics\n"
         " 2. Sports\n"
@@ -55,7 +55,7 @@ def get_custom_inputs(prompt):
         print("Please enter at least one valid entry.")
 
 def main():
-    print(Style.BRIGHT + Fore.LIGHTBLACK_EX + "****** Welcome To News Generator ******\n" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.CYAN + "\n----- Welcome To News Generator -----\n" + Style.RESET_ALL)
     headline_details()
 
     while True:
